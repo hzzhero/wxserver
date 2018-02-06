@@ -1,0 +1,32 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.example.properties.MysqlProperties",
+      "name": "mysql",
+      "type": "com.example.properties.MysqlProperties"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.example.properties.MysqlProperties",
+      "name": "mysql.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.properties.MysqlProperties",
+      "name": "mysql.jdbc-url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.properties.MysqlProperties",
+      "name": "mysql.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.properties.MysqlProperties",
+      "name": "mysql.username",
+      "type": "java.lang.String"
+    }
+  ]
+}
