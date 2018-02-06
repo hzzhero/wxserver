@@ -53,7 +53,7 @@ public class WxController {
 			for (String string : set) {
 				System.out.println(string +":"+xmlMap.get(string));
 			}
-			if(MessageUtil.REQ_MESSAGE_TYPE_TEXT.equals(xmlMap.get("MsgType"))) {
+			if(MessageUtil.REQ_MESSAGE_TYPE_TEXT.equals(xmlMap.get("MsgType"))) {//文本消息
 				TextMessage tm = new TextMessage();
 				tm.setFromUserName(xmlMap.get("ToUserName"));
 				tm.setToUserName(xmlMap.get("FromUserName"));
@@ -61,6 +61,8 @@ public class WxController {
 				tm.setCreateTime(System.currentTimeMillis());
 				tm.setMsgType(MessageUtil.REQ_MESSAGE_TYPE_TEXT);
 				return MessageUtil.textMessageToXml(tm);
+			}else if(MessageUtil.REQ_MESSAGE_TYPE_IMAGE.equals(xmlMap.get("MsgType"))) {//图片消息
+				System.out.println("收到图片消息！");
 			}
 			return null;
 		}
