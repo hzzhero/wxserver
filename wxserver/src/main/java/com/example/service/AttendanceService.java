@@ -12,6 +12,7 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
 import com.example.dao.AttendanceDao;
+import com.example.dao.JdbcTemplateDao;
 import com.example.entity.Attendance;
 import com.example.util.StringUtils;
 
@@ -20,9 +21,12 @@ public class AttendanceService {
 	
 	@Autowired
 	private AttendanceDao attendanceDao;
+	@Autowired
+	private JdbcTemplateDao jdbcTemplateDao;
 
 	public List<Attendance> list() {
-		return attendanceDao.findAll();
+//		return attendanceDao.findAll();
+		return jdbcTemplateDao.findAll();
 	}
 	
 	public Attendance save(Attendance attendance) {
