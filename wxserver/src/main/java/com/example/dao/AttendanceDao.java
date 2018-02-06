@@ -18,7 +18,7 @@ import com.example.entity.Attendance;
 public interface AttendanceDao  extends JpaRepository<Attendance, String>,JpaSpecificationExecutor<Attendance>{
 
 	/**
-	 * 默认用的事HQL
+	 * 默认用的是HQL
 	 */
 	@Query("select  a from  Attendance a  where a.captureTime between  str_to_date(?1, '%Y-%m-%d %H')   and  str_to_date(?2, '%Y-%m-%d %H')  ")
 	public List<Attendance> findByTime(String start,String end);
