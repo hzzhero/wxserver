@@ -2,12 +2,32 @@
   "hints": [],
   "groups": [
     {
+      "sourceType": "com.example.properties.AppProperties",
+      "name": "app",
+      "type": "com.example.properties.AppProperties"
+    },
+    {
       "sourceType": "com.example.properties.MysqlProperties",
       "name": "mysql",
       "type": "com.example.properties.MysqlProperties"
+    },
+    {
+      "sourceType": "com.example.properties.InterfaceUrl",
+      "name": "url",
+      "type": "com.example.properties.InterfaceUrl"
     }
   ],
   "properties": [
+    {
+      "sourceType": "com.example.properties.AppProperties",
+      "name": "app.id",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.properties.AppProperties",
+      "name": "app.key",
+      "type": "java.lang.String"
+    },
     {
       "sourceType": "com.example.properties.MysqlProperties",
       "name": "mysql.driver-class-name",
@@ -26,6 +46,31 @@
     {
       "sourceType": "com.example.properties.MysqlProperties",
       "name": "mysql.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.properties.InterfaceUrl",
+      "name": "url.oauth",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.properties.InterfaceUrl",
+      "name": "url.prefix",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.properties.InterfaceUrl",
+      "name": "url.user",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.properties.InterfaceUrl",
+      "name": "url.usercard",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.example.properties.InterfaceUrl",
+      "name": "url.userclass",
       "type": "java.lang.String"
     }
   ]

@@ -36,7 +36,7 @@ public class UrlEncoder {
 		StringBuffer sb = new StringBuffer();
 		String myUrlParam=urlParam;
 		for (String url : urls) {
-			myUrlParam = url + "?" + paramKey + "=" + new String(Base64.encode(myUrlParam.getBytes()));
+			myUrlParam = url + "?" + paramKey + "=" + new String(MyBase64.encode(myUrlParam.getBytes()));
 		}
 		return myUrlParam;
 	}
@@ -46,7 +46,7 @@ public class UrlEncoder {
 		StringBuffer sb = new StringBuffer();
 		String myUrlParam=urlParam;
 		for (String url : urls) {
-			myUrlParam = url + "?" + paramKey + "=" + new String(Base64.encode(myUrlParam.getBytes()));
+			myUrlParam = url + "?" + paramKey + "=" + new String(MyBase64.encode(myUrlParam.getBytes()));
 		}
 		return myUrlParam;
 	}
@@ -60,7 +60,7 @@ public class UrlEncoder {
 				break;
 			}
 			myurl = myurl.substring(myurl.indexOf(paramKeyEq)+paramKeyEq.length(), myurl.length());
-			myurl = new String(Base64.decode(myurl));
+			myurl = new String(MyBase64.decode(myurl));
 			System.out.println(myurl);
 		}
 		
